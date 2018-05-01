@@ -5,6 +5,9 @@
 #ifndef OUTPUT_H
 #define OUTPUT_H
 
+#include <iostream>
+using namespace std;
+
 #include "global.h"
 
 /** The fetch failed

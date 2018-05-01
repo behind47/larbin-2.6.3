@@ -7,7 +7,6 @@
  * and send them if it didn't see them before
  */
 
-#include <iostream.h>
 #include <string.h>
 
 #include "options.h"

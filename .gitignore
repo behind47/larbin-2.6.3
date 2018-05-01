@@ -1,3 +1,18 @@
+
+#################
+## Makefile
+#################
+
+*.o
+*.a
+.depend
+larbin
+
+config.h
+config.status
+config.make
+src/options.h
+
 #################
 ## Eclipse
 #################

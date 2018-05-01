@@ -14,6 +14,8 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <string.h>
+#include <iostream>
+using namespace std;
 
 #include "types.h"
 #include "utils/url.h"

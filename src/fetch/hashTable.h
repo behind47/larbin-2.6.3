@@ -12,6 +12,9 @@
 #include "types.h"
 #include "utils/url.h"
 
+#include <iostream>
+using namespace std;
+
 class hashTable {
  private:
   ssize_t size;

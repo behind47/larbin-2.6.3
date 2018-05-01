@@ -2,7 +2,7 @@
 // Sebastien Ailleret
 // 07-12-01 -> 07-12-01
 
-#include <iostream.h>
+#include <iostream>
 #include <string.h>
 #include <unistd.h>
 
@@ -14,6 +14,8 @@
 #include "utils/text.h"
 #include "utils/debug.h"
 #include "interf/output.h"
+
+using namespace std;
 
 /** A page has been loaded successfully
  * @param page the page that has been fetched

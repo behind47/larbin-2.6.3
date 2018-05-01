@@ -5,6 +5,9 @@
 #ifndef CONNEXION_H
 #define CONNEXION_H
 
+#include <iostream>
+using namespace std;
+
 /* make write until everything is written
  * return 0 on success, 1 otherwise
  * Don't work on non-blocking fds...

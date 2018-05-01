@@ -13,6 +13,9 @@
 #include "utils/Vector.h"
 #include "fetch/site.h"
 
+#include <iostream>
+using namespace std;
+
 struct Connexion;
 
 class file {

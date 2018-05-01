@@ -2,7 +2,6 @@
 // Sebastien Ailleret
 // 07-12-01 -> 07-12-01
 
-#include <iostream.h>
 #include <stdlib.h>
 
 #include "utils/mypthread.h"

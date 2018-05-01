@@ -5,6 +5,9 @@
 #ifndef WEBSERVER_H
 #define WEBSERVER_H
 
+#include <iostream>
+using namespace std;
+
 #ifndef NOWEBSERVER
 void *startWebserver (void *none);
 #endif // NOWEBSERVER

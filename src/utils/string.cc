@@ -3,7 +3,6 @@
 // 20-12-99 -> 10-12-01
 
 #include <string.h>
-#include <iostream.h>
 
 #include "options.h"
 

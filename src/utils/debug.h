@@ -8,6 +8,9 @@
 #ifndef DEBUG_H
 #define DEBUG_H
 
+#include <iostream>
+using namespace std;
+
 #include "options.h"
 
 ////////////////////////////////////////////////

@@ -5,6 +5,9 @@
 #ifndef SEQUENCER_H
 #define SEQUENCER_H
 
+#include <iostream>
+using namespace std;
+
 /** only for debugging, handle with care */
 extern uint space;
 

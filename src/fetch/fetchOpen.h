@@ -5,6 +5,9 @@
 #ifndef FETCHOPEN_H
 #define FETCHOPEN_H
 
+#include <iostream>
+using namespace std;
+
 /* Opens sockets
  * this function perform dns calls, using adns
  */

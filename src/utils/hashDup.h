@@ -8,6 +8,8 @@
 
 #ifndef HASHDUP_H
 #define HASHDUP_H
+#include <iostream>
+using namespace std;
 
 class hashDup {
  private:

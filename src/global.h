@@ -27,6 +27,9 @@
 #include "fetch/site.h"
 #include "fetch/checker.h"
 
+#include <iostream>
+using namespace std;
+
 #define addIPUrl() global::IPUrl++
 #define delIPUrl() global::IPUrl--
 

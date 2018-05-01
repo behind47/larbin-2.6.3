@@ -6,6 +6,8 @@
 #define INPUT_H
 
 #include "global.h"
+#include <iostream>
+using namespace std;
 
 /** see if there is some input and manage it */
 int input ();

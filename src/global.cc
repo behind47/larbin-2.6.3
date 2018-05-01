@@ -7,7 +7,6 @@
 #include <netinet/in.h>
 #include <errno.h>
 #include <fcntl.h>
-#include <iostream.h>
 #include <string.h>
 #include <adns.h>
 #include <netdb.h>
@@ -84,7 +83,7 @@ int global::IPUrl = 0;
  * Everything is read from the config file (larbin.conf by default)
  */
 global::global (int argc, char *argv[]) {
-  char *configFile = "larbin.conf";
+  char *configFile = (char*)"larbin.conf";
 #ifdef RELOAD
   bool reload = true;
 #else
@@ -113,8 +112,8 @@ global::global (int argc, char *argv[]) {
   // Standard values
   waitDuration = 60;
   depthInSite = 5;
-  userAgent = "larbin";
-  sender = "larbin@unspecified.mail";
+  userAgent = (char*)"larbin";
+  sender = (char*)"larbin@unspecified.mail";
   nb_conn = 20;
   dnsConn = 3;
   httpPort = 0;
@@ -122,8 +121,8 @@ global::global (int argc, char *argv[]) {
   proxyAddr = NULL;
   domains = NULL;
   // FIFOs
-  URLsDisk = new PersistentFifo(reload, fifoFile);
-  URLsDiskWait = new PersistentFifo(reload, fifoFileWait);
+  URLsDisk = new PersistentFifo(reload, (char*)fifoFile);
+  URLsDiskWait = new PersistentFifo(reload, (char*)fifoFileWait);
   URLsPriority = new SyncFifo<url>;
   URLsPriorityWait = new SyncFifo<url>;
   inter = new Interval(ramUrls);
@@ -142,30 +141,30 @@ global::global (int argc, char *argv[]) {
   crash("Create global values");
   // Headers
   LarbinString strtmp;
-  strtmp.addString("\r\nUser-Agent: ");
+  strtmp.addString((char*)"\r\nUser-Agent: ");
   strtmp.addString(userAgent);
-  strtmp.addString(" ");
+  strtmp.addString((char*)" ");
   strtmp.addString(sender);
 #ifdef SPECIFICSEARCH
-  strtmp.addString("\r\nAccept: text/html");
+  strtmp.addString((char*)"\r\nAccept: text/html");
   int i=0;
   while (contentTypes[i] != NULL) {
-    strtmp.addString(", ");
+    strtmp.addString((char*)", ");
     strtmp.addString(contentTypes[i]);
     i++;
   }
 #elif !defined(IMAGES) && !defined(ANYTYPE)
-  strtmp.addString("\r\nAccept: text/html");
+  strtmp.addString((char*)"\r\nAccept: text/html");
 #endif // SPECIFICSEARCH
-  strtmp.addString("\r\n\r\n");
+  strtmp.addString((char*)"\r\n\r\n");
   headers = strtmp.giveString();
   // Headers robots.txt
   strtmp.recycle();
-  strtmp.addString("\r\nUser-Agent: ");
+  strtmp.addString((char*)"\r\nUser-Agent: ");
   strtmp.addString(userAgent);
-  strtmp.addString(" (");
+  strtmp.addString((char*)" (");
   strtmp.addString(sender);
-  strtmp.addString(")\r\n\r\n");
+  strtmp.addString((char*)")\r\n\r\n");
   headersRobots = strtmp.giveString();
 #ifdef THREAD_OUTPUT
   userConns = new ConstantSizedFifo<Connexion>(nb_conn);

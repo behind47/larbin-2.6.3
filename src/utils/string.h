@@ -6,6 +6,8 @@
 #define STRING_HH
 
 #include <assert.h>
+#include <iostream>
+using namespace std;
 
 #include "types.h"
 #include "utils/debug.h"

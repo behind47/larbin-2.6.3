@@ -5,6 +5,9 @@
 #ifndef FETCHPIPE_H
 #define FETCHPIPE_H
 
+#include <iostream>
+using namespace std;
+
 void checkTimeout ();
 
 void checkAll ();

@@ -2,7 +2,6 @@
 // Sebastien Ailleret
 // 23-11-99 -> 15-02-01
 
-#include <iostream.h>
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/socket.h>

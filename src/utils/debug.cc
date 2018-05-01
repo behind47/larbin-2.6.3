@@ -2,8 +2,6 @@
 // Sebastien Ailleret
 // 15-11-99 -> 03-04-01
 
-#include <iostream.h>
-
 #include "options.h"
 
 #include "types.h"

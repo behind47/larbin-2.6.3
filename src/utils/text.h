@@ -6,6 +6,8 @@
 #define TEXT_H
 
 #include "utils/string.h"
+#include <iostream>
+using namespace std;
 
 /* lowercase a char */
 char lowerCase (char a);

@@ -7,6 +7,8 @@
 
 #include "types.h"
 #include "utils/Vector.h"
+#include <iostream>
+using namespace std;
 
 /** check if an url is allready known
  * if not send it

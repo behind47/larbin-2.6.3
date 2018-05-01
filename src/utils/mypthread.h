@@ -6,6 +6,8 @@
 #define MYTHREAD_H
 
 #include <pthread.h>
+#include <iostream>
+using namespace std;
 
 #include "options.h"
 
